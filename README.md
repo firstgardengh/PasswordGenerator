@@ -24,7 +24,7 @@ With this code you generate passwords the same, but multiple.
 int flags = pass_gen->password_strength(password);
 std::printf("Password strength flags for singular password: %i", flags);
 ```
-Here we check the flags of the password's conditions. For each type (`upper`, `lower`, `numerical`, `special`) you get 1 point added to the flag.
+Here we check the flags of the password's conditions. For each input (`upper`, `lower`, `numerical`, `special`) you either get 1 point or no point added to the flag.
 The final flag total would be 4.
 
 
